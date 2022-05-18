@@ -8,8 +8,8 @@
 $Cred = Get-Credential
 
 #Global Settings
-$HVServer = "studentvm.engineerad.ca"
-$Vcenter = "vcsa2.engineerad.ca"
+$HVServer = "<Horizon View Server>"
+$Vcenter = "<vCenter Server>"
 $datacenter = "<Your Datacenter>"
 $datastore = "<Your Datsastore>"
 $DomainAdmin = "<Your Instant Clone Domain Admin>"
