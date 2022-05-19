@@ -18,3 +18,19 @@ $ResourcePool = "<Resourcepool path>"
 $NetBiosName = "<Your NETBIOS>"
 $ParentVM = "<Name of ParentVM>"
 $SnapshotVM = "<Name of Snapshot VM>"
+
+#Select Environment
+$Environment = "<Env Name>" # or STUDENT or POC
+
+If ($environment -eq "PRODUCTION")
+    {
+        $PoolName = "PRODUCTION"
+        $PoolDisplayName = "PRODUCTION"
+        $ProvTime = "UP_FRONT"
+        $VmFolder  = "</DATASTORE/FOLDER>"
+        $MinimumCount = 1
+        $MaximumCount = 5
+        $SpareCount = 1
+        $NumUnassignedMachinesKeptPoweredOn = 1
+        $AdContainer = "OU=PRODUCTION,OU=VIRTUAL DESKTOPS"
+    }
