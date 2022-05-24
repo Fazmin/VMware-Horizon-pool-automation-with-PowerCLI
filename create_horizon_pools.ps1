@@ -34,3 +34,29 @@ If ($environment -eq "PRODUCTION")
         $NumUnassignedMachinesKeptPoweredOn = 1
         $AdContainer = "OU=PRODUCTION,OU=VIRTUAL DESKTOPS"
     }
+
+If ($environment -eq "TEST")
+    {
+        $PoolName = "TEST"
+        $PoolDisplayName = "TEST"
+        $ProvTime = "UP_FRONT"
+        $VmFolder  = "</DATASTORE/FOLDER>"
+        $MinimumCount = 1
+        $MaximumCount = 5
+        $SpareCount = 1
+        $NumUnassignedMachinesKeptPoweredOn = 1
+        $AdContainer = "OU=TEST,OU=VIRTUAL DESKTOPS"
+    }   
+    
+If ($environment -eq "PROOFOFCONCEPT")
+    {
+        $PoolName = "PROOFOFCONCEPT"
+        $PoolDisplayName = "PROOFOFCONCEPT"
+        $ProvTime = "UP_FRONT"
+        $VmFolder  = "</DATASTORE/FOLDER> "
+        $MinimumCount = 1
+        $MaximumCount = 5
+        $SpareCount = 1
+        $NumUnassignedMachinesKeptPoweredOn = 1
+        $AdContainer = "OU=PROOFOFCONCEPT,OU=VIRTUAL DESKTOPS"
+    }       
