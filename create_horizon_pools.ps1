@@ -60,3 +60,18 @@ If ($environment -eq "PROOFOFCONCEPT")
         $NumUnassignedMachinesKeptPoweredOn = 1
         $AdContainer = "OU=PROOFOFCONCEPT,OU=VIRTUAL DESKTOPS"
     }       
+
+
+
+#Generic Horizon Settings
+# $NamingPattern = "VDI-$($PoolName)-{n:fixed=3}" # for example
+$NamingPattern = "Pool-C-VM-{n:fixed=3}" # for example
+$UserAssignment = "FLOATING" # or DEDICATED
+$AutomaticAssignment = $true # or $false
+$allowUsersToResetMachines = $false # or $true
+$AllowMultipleSessionsPerUser = $false # or $true
+$deleteOrRefreshMachineAfterLogoff = "NEVER" # DELETE or NEVER -lof
+$RefreshOsDiskAfterLogoff = "NEVER"
+$supportedDisplayProtocols = "BLAST","PCOIP"
+$renderer3D = "ENABELED"
+$enableGRIDvGPUs = $true
