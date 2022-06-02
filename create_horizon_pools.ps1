@@ -98,3 +98,6 @@ $allowUsersToChooseProtocol = 1
 $AutomaticLogoffPolicy = "AFTER" #IMMEDIATELY or NEVER
 $postsyncscript = ""
 $postsyncpara = ""
+
+#Connect to Horizon Connection Server
+Connect-HVServer -Server $HVServer -Credential $Cred
