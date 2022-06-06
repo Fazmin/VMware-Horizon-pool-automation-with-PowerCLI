@@ -101,3 +101,16 @@ $postsyncpara = ""
 
 #Connect to Horizon Connection Server
 Connect-HVServer -Server $HVServer -Credential $Cred
+
+#Create Pool Process
+New-HVPool -instantclone `
+            -Datastores $Datastores `
+            -HostOrCluster $HostOrCluster `
+            -NamingMethod $NamingMethod `
+            -NetBiosName $NetBiosName `
+            -ParentVM $ParentVM `
+            -PoolName $NewPoolName `
+            -ResourcePool $ResourcePool `
+            -SnapshotVM $SnapshotVM `
+            -UserAssignment $UserAssignment `
+            -VmFolder $VmFolder `
