@@ -114,3 +114,7 @@ New-HVPool -instantclone `
             -SnapshotVM $SnapshotVM `
             -UserAssignment $UserAssignment `
             -VmFolder $VmFolder `
+            -AdContainer $AdContainer `
+            -AutomaticAssignment $AutomaticAssignment `
+            -datacenter $datacenter `
+            -DomainAdmin $DomainAdmin `
