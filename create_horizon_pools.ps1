@@ -118,3 +118,7 @@ New-HVPool -instantclone `
             -AutomaticAssignment $AutomaticAssignment `
             -datacenter $datacenter `
             -DomainAdmin $DomainAdmin `
+            -Enable $true `
+            -EnableProvisioning $EnableProvisioning `
+            -MaximumCount $MaximumCount `
+            -MinimumCount $MinimumCount `
