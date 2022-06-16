@@ -122,3 +122,9 @@ New-HVPool -instantclone `
             -EnableProvisioning $EnableProvisioning `
             -MaximumCount $MaximumCount `
             -MinimumCount $MinimumCount `
+            -NamingPattern $NamingPattern `
+            -NumUnassignedMachinesKeptPoweredOn $NumUnassignedMachinesKeptPoweredOn `
+            -PoolDisplayName $PoolDisplayName `
+            -ProvisioningTime $ProvTime `
+            -ReclaimVmDiskSpace $ReclaimVmDiskSpace `
+            -RedirectWindowsProfile $RedirectWindowsProfile `
