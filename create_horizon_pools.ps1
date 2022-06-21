@@ -128,3 +128,9 @@ New-HVPool -instantclone `
             -ProvisioningTime $ProvTime `
             -ReclaimVmDiskSpace $ReclaimVmDiskSpace `
             -RedirectWindowsProfile $RedirectWindowsProfile `
+            -SpareCount $SpareCount `
+            -StopProvisioningOnError $true `
+            -StorageOvercommit $StorageOvercommit `
+            -UseNativeSnapshots $UseNativeSnapshots `
+            -UseSeparateDatastoresReplicaAndOSDisks $UseSeparateDatastoresReplicaAndOSDisks `
+            -UseVSAN $UseVSAN `
