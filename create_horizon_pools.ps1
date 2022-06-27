@@ -134,3 +134,7 @@ New-HVPool -instantclone `
             -UseNativeSnapshots $UseNativeSnapshots `
             -UseSeparateDatastoresReplicaAndOSDisks $UseSeparateDatastoresReplicaAndOSDisks `
             -UseVSAN $UseVSAN `
+            -Vcenter $Vcenter `
+            -enableHTMLAccess $enableHTMLAccess `
+            -defaultDisplayProtocol $defaultDisplayProtocol `
+            -AutomaticLogoffMinutes $AutomaticLogoffMinutes `
