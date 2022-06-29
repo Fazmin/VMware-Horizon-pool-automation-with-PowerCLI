@@ -138,3 +138,5 @@ New-HVPool -instantclone `
             -enableHTMLAccess $enableHTMLAccess `
             -defaultDisplayProtocol $defaultDisplayProtocol `
             -AutomaticLogoffMinutes $AutomaticLogoffMinutes `
+            -allowUsersToChooseProtocol $allowUsersToChooseProtocol `
+            -AutomaticLogoffPolicy $AutomaticLogoffPolicy `
