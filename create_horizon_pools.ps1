@@ -140,3 +140,5 @@ New-HVPool -instantclone `
             -AutomaticLogoffMinutes $AutomaticLogoffMinutes `
             -allowUsersToChooseProtocol $allowUsersToChooseProtocol `
             -AutomaticLogoffPolicy $AutomaticLogoffPolicy `
+            -PostSynchronizationScriptParameters $postsyncpara `
+            -PostSynchronizationScriptName $postsyncscript `
