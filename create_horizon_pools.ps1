@@ -3,8 +3,9 @@
 # for more indepth information please visit https://github.com/vmware/PowerCLI-Example-Scripts/tree/master/Modules/VMware.Hv.Helper.
 # Custmized script written by: Fazmin Nizam
 # This will create pools based on the Selected golden images make sure to add the required data prior executingt the script.
+# Things to do: Add option to email admin when each of the process is done, Create a log fileof the process and attach it to the email
 
-#Credentials
+#vCenter Credentials
 $Cred = Get-Credential
 
 #Global Settings
