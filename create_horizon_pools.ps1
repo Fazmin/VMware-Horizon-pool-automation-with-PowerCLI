@@ -69,7 +69,7 @@ If ($environment -eq "PROOFOFCONCEPT")
 $NamingPattern = "Pool-C-VM-{n:fixed=3}" # for example
 $UserAssignment = "FLOATING" # or DEDICATED
 $AutomaticAssignment = $true # or $false
-$allowUsersToResetMachines = $false # or $true
+$allowUsersToResetMachines = $true # or $true
 $AllowMultipleSessionsPerUser = $false # or $true
 $deleteOrRefreshMachineAfterLogoff = "NEVER" # DELETE or NEVER -lof
 $RefreshOsDiskAfterLogoff = "NEVER"
